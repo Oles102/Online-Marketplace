@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyProject</title>
+    <title>Shop 'Shelter'</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -18,7 +18,9 @@
        <% if user_signed_in? %>
         <br>
         <%= link_to "Products", products_path %>
-        <br>
+          <br>
+        <%= link_to "My Cart", cart_path %>
+          <br>
         <%= link_to current_user.email, edit_user_registration_path %>
         <br>
         <% if current_user.avatar.attached? %>

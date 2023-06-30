@@ -23,13 +23,13 @@
       </div>
 
       <div class="button-group">
-        <%= form_with(url: carts_add_path) do |f| %>
+        <%= form_with(url: cart_path) do |f| %>
           <%= f.hidden_field :id, value: product.id %>
           <%= f.number_field :quantity, value: orderable.quantity, min: 0 %>
           <%= f.submit "Buy Now" %>
         <% end %>
 
-        <%= form_with(url: carts_remove_path) do |f| %>
+        <%= form_with(url: remove_from_cart_cart_path(orderable.id), method: :delete) do |f| %>
           <%= f.hidden_field :id, value: orderable.id %>
           <%= f.submit "X" %>
         <% end %>

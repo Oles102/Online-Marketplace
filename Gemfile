@@ -34,7 +34,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+   gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -84,10 +84,7 @@ end
 
 
   gem 'faker'
-  gem 'actionpack-action_caching'
   gem 'curb'
-  gem 'rubocop', require: false
-  gem 'rubocop-rails'
   gem 'devise'
   gem 'activeadmin'
   gem 'image_processing'

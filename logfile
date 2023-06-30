@@ -252,3 +252,12 @@
 2023-06-28 15:51:23.347 MSK [4737] ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_ea59a35211" on table "carts"
 2023-06-28 15:51:23.347 MSK [4737] DETAIL:  Key (id)=(21) is still referenced from table "carts".
 2023-06-28 15:51:23.347 MSK [4737] STATEMENT:  DELETE FROM "users" WHERE "users"."id" = $1
+2023-06-30 15:07:52.706 MSK [977] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-30 15:07:52.707 MSK [977] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-30 15:07:52.713 MSK [977] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-30 15:07:52.725 MSK [978] LOG:  database system was interrupted; last known up at 2023-06-29 00:52:37 MSK
+2023-06-30 15:07:53.025 MSK [978] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-30 15:07:53.029 MSK [978] LOG:  redo starts at 0/1C99040
+2023-06-30 15:07:53.029 MSK [978] LOG:  invalid record length at 0/1C99128: wanted 24, got 0
+2023-06-30 15:07:53.029 MSK [978] LOG:  redo done at 0/1C990F0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-30 15:07:53.055 MSK [977] LOG:  database system is ready to accept connections

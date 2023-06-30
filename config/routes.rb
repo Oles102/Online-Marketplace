@@ -15,10 +15,9 @@ Rails.application.routes.draw do
   #   post :add, on: :collection
   #   post :remove, on: :collection
   # end
-  scope :cart, controller: 'carts' do
-    get 'carts', to: 'carts#show'
-    post 'carts/add'
-    post 'carts/remove'
+  resource :cart, only: [:show] do
+    post '/add', to: 'carts#add', as: 'add_to_cart'
+    delete '/remove/:id', to: 'carts#remove', as: 'remove_from_cart'
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

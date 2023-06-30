@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  products: "Products"
+  new_product: "New Product"
+  locale:
+    change: "Change language"
+  time:
+    formats:
+      long: "%d %B %Y, %H:%M"

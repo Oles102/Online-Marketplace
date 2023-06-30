@@ -1,10 +1,57 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @product %>
-
+<%= render  @product  %>
 <div>
-  <%= link_to "Edit this product", edit_product_path(@product) %> |
   <%= link_to "Back to products", products_path %>
+     <% if policy(@product).update? %>
 
-  <%= button_to "Destroy this product", @product, method: :delete %>
+    <%= link_to "Edit", edit_product_path(@product) %> |
+    <%= link_to "Delete", @product, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+  <% end %>
 </div>
+
+<%= form_with model: [@product, @review] do |form| %>
+  <% if @review.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+        <% @review.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :rating, style: "display: block" %>
+    <%= form.select :rating, (1..5) %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+   <h2>Reviews</h2>
+
+    <p>Rating: <%= @product.reviews.average(:rating) %></p>
+
+    <% @reviews.each do |review| %>
+
+      <p>
+        <%= review.comment %>
+        <%= review.rating %>
+      <p>
+
+      <%= link_to "Edit this review", edit_product_path(@product, review) %>
+
+      <% if policy(@review).destroy? %>
+        <%= button_to "Destroy this review", product_path(@product, review), method: :delete %>
+    <% end %>
+<% end %>

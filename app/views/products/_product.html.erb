@@ -1,2 +1,26 @@
-<div id="<%= dom_id product %>">
+
+<div id="<%= dom_id product %>" class="product-container">
+    <p>
+      <strong>Name:</strong>
+      <%= product.name %>
+    </p>
+     <p>
+       <strong>Price: </strong>
+       <%= number_to_currency(product.price, unit: "", separator: ".", delimiter: "", format: "%n %u") %> $
+     </p>
+     <p>
+       <strong>Description: </strong>
+       <%= product.description %>
+     </p>
+      <div>
+        <% product.images.each do |image| %>
+          <%= link_to image_tag(image.variant(resize_to_limit: [100, 100])), image %>
+        <% end %>
+      </div>
+
+    <%= form_with(url: carts_add_path) do |f| %>
+      <%= f.hidden_field :id, value: product.id %>
+      <%= f.number_field :quantity, value: 0, min: 1 %>
+      <%= f.submit "Add To Cart" %>
+    <% end %>
 </div>

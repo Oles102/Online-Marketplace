@@ -1,0 +1,44 @@
+<div style="display:flex; justify-content: flex-start; margin: 5em 5em;">
+  <% @cart.orderables.each do |orderable| %>
+    <% product = orderable.product %>
+
+    <div id="cart-<%= product.id %>">
+      <p>
+        <strong>Name:</strong>
+        <%= product.name %>
+      </p>
+      <p>
+        <strong>Description:</strong>
+        <%= product.description %>
+      </p>
+      <p>
+        <strong>Price:</strong>
+        <%= number_to_currency(product.price, unit: "", separator: ".", delimiter: "", format: "%n %u") %> $
+      </p>
+
+      <div>
+        <% product.images.each do |image| %>
+          <%= link_to image_tag(image.variant(resize_to_limit: [100, 100])), image %>
+        <% end %>
+      </div>
+
+      <div class="button-group">
+        <%= form_with(url: carts_add_path) do |f| %>
+          <%= f.hidden_field :id, value: product.id %>
+          <%= f.number_field :quantity, value: orderable.quantity, min: 0 %>
+          <%= f.submit "Buy Now" %>
+        <% end %>
+
+        <%= form_with(url: carts_remove_path) do |f| %>
+          <%= f.hidden_field :id, value: orderable.id %>
+          <%= f.submit "X" %>
+        <% end %>
+      </div>
+
+      <p>
+        <strong>Total:</strong>
+        <%= orderable.total %>
+      </p>
+    </div>
+  <% end %>
+</div>

@@ -4,11 +4,15 @@ module Users
 
     def create
       super do |user|
-        role_name = params[:user][:role] || Role::USER
-        role = Role.find_by(name: role_name)
-        user.add_role(role) if role
+        if user.persisted?
+          Users::Confirmation::EmailMailer.confirm_mail(user).deliver_now
+          # role_name = params[:user][:role] || Role::USER
+          # role = Role.find_by(name: role_name)
+          # user.add_role(role) if role
+        end
       end
     end
+
     protected
 
     def configure_sign_up_params

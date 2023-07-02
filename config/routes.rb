@@ -7,10 +7,6 @@ Rails.application.routes.draw do
     resources :reviews, only: [:create]
   end
 
-  # get 'carts', to: 'carts#show'
-  # post 'carts/add'
-  # post 'carts/remove'
-
   # resource :cart, only: [:show] do
   #   post :add, on: :collection
   #   post :remove, on: :collection

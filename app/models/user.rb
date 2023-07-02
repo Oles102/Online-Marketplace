@@ -10,7 +10,7 @@ class User < ApplicationRecord
   has_many :products
   has_many :reviews, as: :reviewable, dependent: :destroy
   has_one_attached :avatar
-  has_one :cart
+  has_one :cart, dependent: :destroy
 
 
   validates :email,    presence: true, uniqueness: true

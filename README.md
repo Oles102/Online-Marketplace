@@ -9,12 +9,12 @@ Created with:
 
 Tools used in this project:
 1. [Devise](https://betterprogramming.pub/devise-auth-setup-in-rails-7-44240aaed4be) - User authentication
-2. Rolify - Role-based authorization
-3. Pundit - User authorization
-4. Sidekiq - Background job processing
-5. Redis - In-memory data store
-6. Postgres - Database
-7. ActiveAdmin - Admin interface builder
+2. [Rolify](https://github.com/RolifyCommunity/rolify) - Role-based authorization
+3. [Pundit](https://github.com/varvet/pundit) - User authorization
+4. [Sidekiq](https://github.com/sidekiq/sidekiq) - Background job processing
+5. [Redis](https://redis.io/) - In-memory data store
+6. [Postgres](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-20-04) - Database
+7. [ActiveAdmin](https://activeadmin.info/) - Admin interface builder
 
 ## Installation and Setup
 

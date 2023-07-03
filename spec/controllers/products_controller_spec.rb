@@ -131,10 +131,10 @@ RSpec.describe ProductsController, type: :controller do
     context 'when authorized user' do
       it 'destroys the requested product if user is a seller' do
         product = FactoryBot.create(:product)
-        user = product.user # Получаем пользователя, создавшего продукт
-        sign_in user # Авторизуемся от имени пользователя
-        allow(controller).to receive(:authorize).and_return(true) # Заменяем вызов authorize и возвращаем true
-        allow(controller).to receive(:current_user).and_return(user) # Подменяем текущего пользователя
+        user = product.user
+        sign_in user
+        allow(controller).to receive(:authorize).and_return(true)
+        allow(controller).to receive(:current_user).and_return(user)
         expect {
           delete :destroy, params: { id: product.id }
         }.to change(Product, :count).by(-1)
@@ -142,8 +142,8 @@ RSpec.describe ProductsController, type: :controller do
 
       it 'does not destroy the requested product if user is not a seller' do
         product = FactoryBot.create(:product)
-        user = FactoryBot.create(:user) # Создаем другого пользователя, не являющегося продавцом
-        sign_in user # Авторизуемся от имени этого пользователя
+        user = FactoryBot.create(:user)
+        sign_in user
         expect {
           delete :destroy, params: { id: product.id }
         }.not_to change(Product, :count)

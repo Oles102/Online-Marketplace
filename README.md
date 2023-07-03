@@ -7,20 +7,21 @@ Created with:
 - Ruby on Rails 7
 
 
-* Ruby version
+Tools used in this project:
+1. Devise - User authentication
+2. Rolify - Role-based authorization
+3. Pundit - User authorization
+4. Sidekiq - Background job processing
+5. Redis - In-memory data store
+6. Postgres - Database
+7. ActiveAdmin - Admin interface builder
 
-* System dependencies
+## Installation and Setup
 
-* Configuration
+To get started with the **Shelter** project, follow these steps:
 
-* Database creation
+1. Clone the repository:
+```
+git clone https://github.com/Oles102/Online-Marketplace.git
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -24,4 +24,62 @@ To get started with the **Shelter** project, follow these steps:
 ```
 git clone https://github.com/Oles102/Online-Marketplace.git
 ```
+2. Navigate to the project directory:
+```
+cd My_project
+```
+3. Add the required gems to your Gemfile:
+```
+```ruby
+gem "pg"
+gem "redis"
+gem "sassc-rails"
+gem "factory_bot_rails"
+gem "letter_opener"
+gem "devise"
+gem "image_processing"
+gem "rolify"
+gem "pundit"
+gem "sidekiq"
+```
+4.Install the gems:
+```
+bundle install
+```
+5.Set up the database:
+```
+rails db:create
+rails db:migrate
+```
+6.Start the development server:
+```
+rails s
+```
+7.Open the application in your browser at http://localhost:3000.
+
+#Contributing
+
+##We welcome contributions from the community! If you would like to contribute to the Shelter project, please follow these steps:
+
+Fork the repository.
+Create a new branch for your changes:
+```
+git checkout -b feature/your-feature-name
+```
+Make the necessary changes and commit:
+```
+git commit -m "Add your commit message"
+```
+Push your changes to your fork:
+
+```
+git push origin feature/your-feature-name
+```
+
+Open a pull request in our repository so that we can review your changes.
+
+Please feel free to modify the content according to your project and requirements.
+
+
+
 

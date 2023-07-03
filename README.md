@@ -8,7 +8,7 @@ Created with:
 
 
 Tools used in this project:
-1. Devise - User authentication
+1. [Devise](https://betterprogramming.pub/devise-auth-setup-in-rails-7-44240aaed4be) - User authentication
 2. Rolify - Role-based authorization
 3. Pundit - User authorization
 4. Sidekiq - Background job processing

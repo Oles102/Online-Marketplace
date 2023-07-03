@@ -92,3 +92,4 @@ end
   gem 'activestorage-validator'
   gem 'rolify'
   gem 'pundit'
+  gem 'sidekiq'

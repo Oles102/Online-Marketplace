@@ -57,9 +57,9 @@ rails s
 ```
 7.Open the application in your browser at http://localhost:3000.
 
-#Contributing
+# Contributing
 
-##We welcome contributions from the community! If you would like to contribute to the Shelter project, please follow these steps:
+## We welcome contributions from the community! If you would like to contribute to the Shelter project, please follow these steps:
 
 Fork the repository.
 Create a new branch for your changes:

@@ -9,7 +9,21 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
  */
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5em;
+}

@@ -38,3 +38,244 @@
 2023-06-01 16:41:34.767 MSK [2785] LOG:  invalid record length at 0/172DBF8: wanted 24, got 0
 2023-06-01 16:41:34.768 MSK [2785] LOG:  redo done at 0/172DBC0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
 2023-06-01 16:41:34.785 MSK [2784] LOG:  database system is ready to accept connections
+2023-06-03 19:38:04.872 MSK [12200] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-03 19:38:04.872 MSK [12200] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-03 19:38:04.878 MSK [12200] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-03 19:38:04.887 MSK [12201] LOG:  database system was interrupted; last known up at 2023-06-01 18:41:36 MSK
+2023-06-03 19:38:05.165 MSK [12201] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-03 19:38:05.169 MSK [12201] LOG:  redo starts at 0/176DBD8
+2023-06-03 19:38:05.169 MSK [12201] LOG:  invalid record length at 0/176DCC0: wanted 24, got 0
+2023-06-03 19:38:05.169 MSK [12201] LOG:  redo done at 0/176DC88 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-03 19:38:05.187 MSK [12200] LOG:  database system is ready to accept connections
+2023-06-03 19:40:09.215 MSK [12246] FATAL:  role "ACER" does not exist
+2023-06-03 19:40:09.316 MSK [12251] FATAL:  role "ACER" does not exist
+2023-06-06 15:17:19.428 MSK [817] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-06 15:17:19.429 MSK [817] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-06 15:17:19.434 MSK [817] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-06 15:17:19.443 MSK [818] LOG:  database system was interrupted; last known up at 2023-06-03 21:58:07 MSK
+2023-06-06 15:17:19.720 MSK [818] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-06 15:17:19.724 MSK [818] LOG:  redo starts at 0/176E798
+2023-06-06 15:17:19.724 MSK [818] LOG:  invalid record length at 0/176E880: wanted 24, got 0
+2023-06-06 15:17:19.724 MSK [818] LOG:  redo done at 0/176E848 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-06 15:17:19.741 MSK [817] LOG:  database system is ready to accept connections
+2023-06-06 16:21:25.164 MSK [996] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-06 16:21:25.165 MSK [996] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-06 16:21:25.169 MSK [996] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-06 16:21:25.177 MSK [997] LOG:  database system was interrupted; last known up at 2023-06-06 15:22:20 MSK
+2023-06-06 16:21:25.447 MSK [997] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-06 16:21:25.451 MSK [997] LOG:  redo starts at 0/176E990
+2023-06-06 16:21:25.451 MSK [997] LOG:  invalid record length at 0/176EA78: wanted 24, got 0
+2023-06-06 16:21:25.451 MSK [997] LOG:  redo done at 0/176EA40 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-06 16:21:25.470 MSK [996] LOG:  database system is ready to accept connections
+2023-06-08 13:51:44.592 MSK [916] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-08 13:51:44.593 MSK [916] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-08 13:51:44.599 MSK [916] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-08 13:51:44.608 MSK [917] LOG:  database system was interrupted; last known up at 2023-06-06 17:41:27 MSK
+2023-06-08 13:51:44.999 MSK [917] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-08 13:51:45.003 MSK [917] LOG:  redo starts at 0/176F2A8
+2023-06-08 13:51:45.003 MSK [917] LOG:  invalid record length at 0/176F390: wanted 24, got 0
+2023-06-08 13:51:45.003 MSK [917] LOG:  redo done at 0/176F358 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-08 13:51:45.026 MSK [916] LOG:  database system is ready to accept connections
+2023-06-15 14:11:24.224 MSK [687] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-15 14:11:24.225 MSK [687] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-15 14:11:24.230 MSK [687] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-15 14:11:24.238 MSK [688] LOG:  database system was interrupted; last known up at 2023-06-08 17:36:49 MSK
+2023-06-15 14:11:24.500 MSK [688] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-15 14:11:24.504 MSK [688] LOG:  redo starts at 0/178DFE0
+2023-06-15 14:11:24.504 MSK [688] LOG:  invalid record length at 0/178E0E0: wanted 24, got 0
+2023-06-15 14:11:24.504 MSK [688] LOG:  redo done at 0/178E0A8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-15 14:11:24.522 MSK [687] LOG:  database system is ready to accept connections
+2023-06-16 18:13:54.529 MSK [1633] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-16 18:13:54.529 MSK [1633] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-16 18:13:54.534 MSK [1633] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-16 18:13:54.543 MSK [1634] LOG:  database system was interrupted; last known up at 2023-06-15 21:11:30 MSK
+2023-06-16 18:13:54.845 MSK [1634] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-16 18:13:54.849 MSK [1634] LOG:  redo starts at 0/17DC8C0
+2023-06-16 18:13:54.849 MSK [1634] LOG:  invalid record length at 0/17DC9A8: wanted 24, got 0
+2023-06-16 18:13:54.849 MSK [1634] LOG:  redo done at 0/17DC970 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-16 18:13:54.865 MSK [1633] LOG:  database system is ready to accept connections
+2023-06-17 18:02:41.308 MSK [1742] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-17 18:02:41.309 MSK [1742] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-17 18:02:41.316 MSK [1742] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-17 18:02:41.328 MSK [1743] LOG:  database system was interrupted; last known up at 2023-06-16 18:38:54 MSK
+2023-06-17 18:02:41.705 MSK [1743] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-17 18:02:41.709 MSK [1743] LOG:  redo starts at 0/17DD958
+2023-06-17 18:02:41.709 MSK [1743] LOG:  invalid record length at 0/17DDA40: wanted 24, got 0
+2023-06-17 18:02:41.709 MSK [1743] LOG:  redo done at 0/17DDA08 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-17 18:02:41.730 MSK [1742] LOG:  database system is ready to accept connections
+2023-06-18 16:55:56.490 MSK [892] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-18 16:55:56.490 MSK [892] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-18 16:55:56.497 MSK [892] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-18 16:55:56.509 MSK [893] LOG:  database system was interrupted; last known up at 2023-06-18 00:02:49 MSK
+2023-06-18 16:55:56.824 MSK [893] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-18 16:55:56.828 MSK [893] LOG:  redo starts at 0/17F48C8
+2023-06-18 16:55:56.828 MSK [893] LOG:  invalid record length at 0/17F49B0: wanted 24, got 0
+2023-06-18 16:55:56.828 MSK [893] LOG:  redo done at 0/17F4978 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-18 16:55:56.849 MSK [892] LOG:  database system is ready to accept connections
+2023-06-20 15:26:47.201 MSK [999] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-20 15:26:47.202 MSK [999] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-20 15:26:47.207 MSK [999] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-20 15:26:47.219 MSK [1000] LOG:  database system was interrupted; last known up at 2023-06-18 18:20:56 MSK
+2023-06-20 15:26:47.508 MSK [1000] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-20 15:26:47.513 MSK [1000] LOG:  redo starts at 0/17F9C60
+2023-06-20 15:26:47.513 MSK [1000] LOG:  invalid record length at 0/17F9D48: wanted 24, got 0
+2023-06-20 15:26:47.513 MSK [1000] LOG:  redo done at 0/17F9D10 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-20 15:26:47.533 MSK [999] LOG:  database system is ready to accept connections
+2023-06-21 16:01:52.704 MSK [783] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-21 16:01:52.705 MSK [783] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-21 16:01:52.709 MSK [783] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-21 16:01:52.717 MSK [784] LOG:  database system was interrupted; last known up at 2023-06-20 23:51:58 MSK
+2023-06-21 16:01:53.002 MSK [784] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-21 16:01:53.006 MSK [784] LOG:  redo starts at 0/18428B0
+2023-06-21 16:01:53.006 MSK [784] LOG:  invalid record length at 0/1842998: wanted 24, got 0
+2023-06-21 16:01:53.006 MSK [784] LOG:  redo done at 0/1842960 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-21 16:01:53.030 MSK [783] LOG:  database system is ready to accept connections
+2023-06-22 01:28:04.585 MSK [9068] FATAL:  lock file "postmaster.pid" already exists
+2023-06-22 01:28:04.585 MSK [9068] HINT:  Is another postmaster (PID 783) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2023-06-22 01:30:43.509 MSK [9128] FATAL:  role "postgres" does not exist
+2023-06-22 01:30:48.960 MSK [9132] FATAL:  role "postgres" does not exist
+2023-06-22 01:31:00.824 MSK [9136] FATAL:  role "postgres" does not exist
+2023-06-22 01:31:11.820 MSK [9140] FATAL:  role "postgres" does not exist
+2023-06-22 01:31:45.557 MSK [9145] FATAL:  role "postgres" does not exist
+2023-06-22 01:31:48.843 MSK [9149] FATAL:  role "postgres" does not exist
+2023-06-22 01:31:53.008 MSK [9153] FATAL:  role "postgres" does not exist
+2023-06-22 01:31:54.106 MSK [9154] FATAL:  role "postgres" does not exist
+2023-06-22 01:32:00.954 MSK [9158] FATAL:  role "postgres" does not exist
+2023-06-22 01:32:05.657 MSK [9162] FATAL:  role "postgres" does not exist
+2023-06-22 01:32:40.970 MSK [9167] FATAL:  role "postgres" does not exist
+2023-06-22 01:32:44.438 MSK [9171] FATAL:  role "postgres" does not exist
+2023-06-22 01:32:57.440 MSK [9175] FATAL:  role "postgres" does not exist
+2023-06-22 01:33:05.946 MSK [9179] FATAL:  role "postgres" does not exist
+2023-06-22 01:37:18.658 MSK [9187] FATAL:  role "postgres" does not exist
+2023-06-22 01:37:20.024 MSK [9191] FATAL:  role "postgres" does not exist
+2023-06-22 01:37:26.429 MSK [9196] FATAL:  role "postgres" does not exist
+2023-06-22 01:37:27.587 MSK [9197] FATAL:  role "postgres" does not exist
+2023-06-22 01:37:30.630 MSK [9201] FATAL:  role "postgres" does not exist
+2023-06-22 01:37:31.304 MSK [9202] FATAL:  role "postgres" does not exist
+2023-06-22 01:38:57.578 MSK [9529] FATAL:  role "postgres" does not exist
+2023-06-22 01:38:58.570 MSK [9533] FATAL:  role "postgres" does not exist
+2023-06-22 01:43:38.909 MSK [9568] FATAL:  role "postgres" does not exist
+2023-06-22 01:43:41.921 MSK [9572] FATAL:  role "postgres" does not exist
+2023-06-22 01:43:46.361 MSK [9576] FATAL:  role "postgres" does not exist
+2023-06-22 01:43:47.358 MSK [9577] FATAL:  role "postgres" does not exist
+2023-06-22 01:43:50.000 MSK [9578] FATAL:  role "postgres" does not exist
+2023-06-22 01:43:57.470 MSK [9582] FATAL:  role "postgres" does not exist
+2023-06-22 01:44:09.194 MSK [9586] FATAL:  role "postgres" does not exist
+2023-06-22 01:44:10.044 MSK [9587] FATAL:  role "postgres" does not exist
+2023-06-22 20:36:32.522 MSK [2420] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-22 20:36:32.523 MSK [2420] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-22 20:36:32.530 MSK [2420] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-22 20:36:32.541 MSK [2421] LOG:  database system was interrupted; last known up at 2023-06-21 22:32:00 MSK
+2023-06-22 20:36:32.846 MSK [2421] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-22 20:36:32.851 MSK [2421] LOG:  redo starts at 0/1851360
+2023-06-22 20:36:32.851 MSK [2421] LOG:  invalid record length at 0/1851448: wanted 24, got 0
+2023-06-22 20:36:32.851 MSK [2421] LOG:  redo done at 0/1851410 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-22 20:36:32.879 MSK [2420] LOG:  database system is ready to accept connections
+2023-06-22 20:36:38.975 MSK [2433] ERROR:  constraint "fk_rails_74a66bd6c5" for relation "reviews" already exists
+2023-06-22 20:36:38.975 MSK [2433] STATEMENT:  ALTER TABLE "reviews" ADD CONSTRAINT "fk_rails_74a66bd6c5"
+	FOREIGN KEY ("user_id")
+	  REFERENCES "users" ("id")
+	
+2023-06-23 15:35:48.746 MSK [2122] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-23 15:35:48.747 MSK [2122] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-23 15:35:48.752 MSK [2122] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-23 15:35:48.761 MSK [2123] LOG:  database system was interrupted; last known up at 2023-06-22 20:46:36 MSK
+2023-06-23 15:35:49.045 MSK [2123] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-23 15:35:49.050 MSK [2123] LOG:  redo starts at 0/1895488
+2023-06-23 15:35:49.050 MSK [2123] LOG:  invalid record length at 0/1895570: wanted 24, got 0
+2023-06-23 15:35:49.050 MSK [2123] LOG:  redo done at 0/1895538 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-23 15:35:49.079 MSK [2122] LOG:  database system is ready to accept connections
+2023-06-24 12:53:03.132 MSK [537] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-24 12:53:03.133 MSK [537] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-24 12:53:03.138 MSK [537] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-24 12:53:03.150 MSK [538] LOG:  database system was interrupted; last known up at 2023-06-23 15:45:53 MSK
+2023-06-24 12:53:03.485 MSK [538] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-24 12:53:03.489 MSK [538] LOG:  redo starts at 0/18C56D8
+2023-06-24 12:53:03.489 MSK [538] LOG:  invalid record length at 0/18C57C0: wanted 24, got 0
+2023-06-24 12:53:03.489 MSK [538] LOG:  redo done at 0/18C5788 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-24 12:53:03.511 MSK [537] LOG:  database system is ready to accept connections
+2023-06-25 14:56:32.599 MSK [685] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-25 14:56:32.599 MSK [685] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-25 14:56:32.606 MSK [685] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-25 14:56:32.616 MSK [686] LOG:  database system was interrupted; last known up at 2023-06-24 18:18:11 MSK
+2023-06-25 14:56:32.911 MSK [686] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-25 14:56:32.914 MSK [686] LOG:  redo starts at 0/19BCD20
+2023-06-25 14:56:32.914 MSK [686] LOG:  invalid record length at 0/19BCE08: wanted 24, got 0
+2023-06-25 14:56:32.914 MSK [686] LOG:  redo done at 0/19BCDD0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-25 14:56:32.934 MSK [685] LOG:  database system is ready to accept connections
+2023-06-26 15:04:21.393 MSK [518] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-26 15:04:21.394 MSK [518] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-26 15:04:21.399 MSK [518] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-26 15:04:21.408 MSK [519] LOG:  database system was interrupted; last known up at 2023-06-25 23:31:43 MSK
+2023-06-26 15:04:21.699 MSK [519] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-26 15:04:21.703 MSK [519] LOG:  redo starts at 0/19DC108
+2023-06-26 15:04:21.703 MSK [519] LOG:  invalid record length at 0/19DC1F0: wanted 24, got 0
+2023-06-26 15:04:21.703 MSK [519] LOG:  redo done at 0/19DC1B8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-26 15:04:21.723 MSK [518] LOG:  database system is ready to accept connections
+2023-06-26 17:03:57.361 MSK [1526] ERROR:  relation "product_ids" does not exist
+2023-06-26 17:03:57.361 MSK [1526] STATEMENT:  CREATE TABLE "orderables" ("id" bigserial primary key, "product_id_id" bigint NOT NULL, "cart_id_id" bigint NOT NULL, "quantity" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_4d2b196544"
+	FOREIGN KEY ("product_id_id")
+	  REFERENCES "product_ids" ("id")
+	, CONSTRAINT "fk_rails_e94d712a9b"
+	FOREIGN KEY ("cart_id_id")
+	  REFERENCES "cart_ids" ("id")
+	)
+2023-06-27 16:41:25.246 MSK [348] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-27 16:41:25.247 MSK [348] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-27 16:41:25.255 MSK [348] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-27 16:41:25.266 MSK [349] LOG:  database system was interrupted; last known up at 2023-06-27 01:14:33 MSK
+2023-06-27 16:41:25.584 MSK [349] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-27 16:41:25.588 MSK [349] LOG:  redo starts at 0/1A3F270
+2023-06-27 16:41:25.588 MSK [349] LOG:  invalid record length at 0/1A3F358: wanted 24, got 0
+2023-06-27 16:41:25.588 MSK [349] LOG:  redo done at 0/1A3F320 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-27 16:41:25.611 MSK [348] LOG:  database system is ready to accept connections
+2023-06-27 17:45:02.666 MSK [1784] ERROR:  column "total" does not exist at character 12
+2023-06-27 17:45:02.666 MSK [1784] STATEMENT:  SELECT SUM(total) FROM "orderables" WHERE "orderables"."cart_id" = $1
+2023-06-28 14:07:24.100 MSK [772] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-28 14:07:24.101 MSK [772] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-28 14:07:24.106 MSK [772] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-28 14:07:24.116 MSK [773] LOG:  database system was interrupted; last known up at 2023-06-28 00:11:38 MSK
+2023-06-28 14:07:24.421 MSK [773] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-28 14:07:24.425 MSK [773] LOG:  redo starts at 0/1A8C5B8
+2023-06-28 14:07:24.425 MSK [773] LOG:  invalid record length at 0/1A8C6A0: wanted 24, got 0
+2023-06-28 14:07:24.425 MSK [773] LOG:  redo done at 0/1A8C668 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-28 14:07:24.452 MSK [772] LOG:  database system is ready to accept connections
+2023-06-28 15:42:27.603 MSK [3604] ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_ea59a35211" on table "carts"
+2023-06-28 15:42:27.603 MSK [3604] DETAIL:  Key (id)=(18) is still referenced from table "carts".
+2023-06-28 15:42:27.603 MSK [3604] STATEMENT:  DELETE FROM "users" WHERE "users"."id" = $1
+2023-06-28 15:43:09.696 MSK [3604] ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_ea59a35211" on table "carts"
+2023-06-28 15:43:09.696 MSK [3604] DETAIL:  Key (id)=(17) is still referenced from table "carts".
+2023-06-28 15:43:09.696 MSK [3604] STATEMENT:  DELETE FROM "users" WHERE "users"."id" = $1
+2023-06-28 15:43:44.575 MSK [3604] ERROR:  update or delete on table "carts" violates foreign key constraint "fk_rails_d9421de196" on table "orderables"
+2023-06-28 15:43:44.575 MSK [3604] DETAIL:  Key (id)=(12) is still referenced from table "orderables".
+2023-06-28 15:43:44.575 MSK [3604] STATEMENT:  DELETE FROM "carts" WHERE "carts"."id" = $1
+2023-06-28 15:51:23.347 MSK [4737] ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_ea59a35211" on table "carts"
+2023-06-28 15:51:23.347 MSK [4737] DETAIL:  Key (id)=(21) is still referenced from table "carts".
+2023-06-28 15:51:23.347 MSK [4737] STATEMENT:  DELETE FROM "users" WHERE "users"."id" = $1
+2023-06-30 15:07:52.706 MSK [977] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-30 15:07:52.707 MSK [977] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-06-30 15:07:52.713 MSK [977] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-06-30 15:07:52.725 MSK [978] LOG:  database system was interrupted; last known up at 2023-06-29 00:52:37 MSK
+2023-06-30 15:07:53.025 MSK [978] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-30 15:07:53.029 MSK [978] LOG:  redo starts at 0/1C99040
+2023-06-30 15:07:53.029 MSK [978] LOG:  invalid record length at 0/1C99128: wanted 24, got 0
+2023-06-30 15:07:53.029 MSK [978] LOG:  redo done at 0/1C990F0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-06-30 15:07:53.055 MSK [977] LOG:  database system is ready to accept connections
+2023-07-02 14:08:27.916 MSK [583] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-02 14:08:27.917 MSK [583] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-02 14:08:27.922 MSK [583] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-02 14:08:27.930 MSK [584] LOG:  database system was interrupted; last known up at 2023-07-02 00:39:21 MSK
+2023-07-02 14:08:28.215 MSK [584] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-02 14:08:28.219 MSK [584] LOG:  redo starts at 0/1CC2F00
+2023-07-02 14:08:28.219 MSK [584] LOG:  invalid record length at 0/1CC2FE8: wanted 24, got 0
+2023-07-02 14:08:28.219 MSK [584] LOG:  redo done at 0/1CC2FB0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-02 14:08:28.242 MSK [583] LOG:  database system is ready to accept connections
+2023-07-03 13:30:45.094 MSK [1306] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-03 13:30:45.096 MSK [1306] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-03 13:30:45.102 MSK [1306] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-03 13:30:45.112 MSK [1307] LOG:  database system was interrupted; last known up at 2023-07-02 19:48:31 MSK
+2023-07-03 13:30:45.411 MSK [1307] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-03 13:30:45.415 MSK [1307] LOG:  redo starts at 0/1D11C98
+2023-07-03 13:30:45.415 MSK [1307] LOG:  invalid record length at 0/1D11D80: wanted 24, got 0
+2023-07-03 13:30:45.415 MSK [1307] LOG:  redo done at 0/1D11D48 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-03 13:30:45.442 MSK [1306] LOG:  database system is ready to accept connections

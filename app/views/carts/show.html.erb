@@ -1,10 +1,7 @@
-<p style="color: green"><%= notice %></p>
+<h1>Your Cart</h1>
+<% @cart.orderables.each do |orderable| %>
 
-<%= render @cart %>
-
-<div>
-  <%= link_to "Edit this cart", edit_cart_path(@cart) %> |
-  <%= link_to "Back to carts", carts_path %>
-
-  <%= button_to "Destroy this cart", @cart, method: :delete %>
-</div>
+  <% product = orderable.product %>
+  <p><%= product.name %> * <%= orderable.quantity %> = <%= product.price * orderable.quantity %>$</p>
+<% end %>
+<p>Your total is <%= @cart.total %>$ </p>

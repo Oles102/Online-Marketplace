@@ -10,9 +10,9 @@ class CartsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Carts"
   end
 
-  test "should create cart" do
+  test "should create carts" do
     visit carts_url
-    click_on "New cart"
+    click_on "New carts"
 
     click_on "Create Cart"
 
@@ -22,7 +22,7 @@ class CartsTest < ApplicationSystemTestCase
 
   test "should update Cart" do
     visit cart_url(@cart)
-    click_on "Edit this cart", match: :first
+    click_on "Edit this carts", match: :first
 
     click_on "Update Cart"
 
@@ -32,7 +32,7 @@ class CartsTest < ApplicationSystemTestCase
 
   test "should destroy Cart" do
     visit cart_url(@cart)
-    click_on "Destroy this cart", match: :first
+    click_on "Destroy this carts", match: :first
 
     assert_text "Cart was successfully destroyed"
   end

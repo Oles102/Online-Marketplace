@@ -1,6 +1,6 @@
 <%= form_with(model: product) do |form| %>
   <% if product.errors.any? %>
-    <div style="color: red">
+    <div style="display:flex;justify-content:space-between;margin: 0em 5em;">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
       <ul>
@@ -11,7 +11,36 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label :category,  style: "display: block" %>
+    <%=form.collection_select :category_id, Category.all, :id, :name, prompt: 'Выберите категорию', class: "form-control" %>
+  </div><br />
+
+  <div class="field">
+    <%= form.label :name, style: "display: block"%>
+    <%= form.text_field :name %>
+  </div><br />
+
   <div>
+    <%= form.label :images, style: "display: block" %>
+    <%= form.file_field :images, multiple: true %>
+  </div><br />
+
+  <div class="field">
+    <%= form.label :price, style: "display: block"%>
+    <div class="input-group">
+      <%= form.number_field :price, class: "form-control", step: "any" %>
+      <span class="input-group-addon">$</span>
+    </div>
+  </div><br />
+
+  <div class="form-group">
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div><br />
+
+  <div class="actions">
     <%= form.submit %>
-  </div>
+  </div><br />
+
 <% end %>

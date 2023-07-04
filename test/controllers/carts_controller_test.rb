@@ -15,7 +15,7 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create cart" do
+  test "should create carts" do
     assert_difference("Cart.count") do
       post carts_url, params: { cart: {  } }
     end
@@ -23,7 +23,7 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to cart_url(Cart.last)
   end
 
-  test "should show cart" do
+  test "should show carts" do
     get cart_url(@cart)
     assert_response :success
   end
@@ -33,12 +33,12 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update cart" do
+  test "should update carts" do
     patch cart_url(@cart), params: { cart: {  } }
     assert_redirected_to cart_url(@cart)
   end
 
-  test "should destroy cart" do
+  test "should destroy carts" do
     assert_difference("Cart.count", -1) do
       delete cart_url(@cart)
     end

@@ -1,0 +1,26 @@
+ru:
+  devise:
+    failure:
+      admin_user:
+        unauthenticated: "Вы не аутентифицированы как администратор."
+    sessions:
+      user:
+        signed_out: "Вы вышли из своего аккаунта!"
+        signed_in: "Вы вошли в свой аккаунт!"
+  time:
+    formats:
+      long: "%d.%m.%Y г., %H:%M"
+  products: "Продукция"
+  new_product: "Новый продукт"
+  locale:
+    change: "Выбрать язык"
+  errors:
+    messages:
+      not_saved: "Не удалось сохранить объект"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: "Пароль не может быть пустым"

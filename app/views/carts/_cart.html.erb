@@ -1,2 +1,9 @@
-<div id="<%= dom_id cart %>">
-</div>
+  <%= turbo_frame_tag "carts" do %>
+    <h1>Shopping Cart</h1>
+    <% if @cart.orderables.count > 0 %>
+      <%= render partial: "carts/orderables", locals: {cart: @cart } %>
+      <p>Total: <%= @cart.total %></p>
+      <% else %>
+        <p>It's empty</p>
+      <% end %>
+    <% end %>

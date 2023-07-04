@@ -1,70 +1,46 @@
 class CartsController < ApplicationController
-  before_action :set_cart, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
+  before_action :set_cart
+  before_action :set_orderable, only: [:remove]
 
-  # GET /carts or /carts.json
-  def index
-    @carts = Cart.all
-  end
-
-  # GET /carts/1 or /carts/1.json
   def show
+    @render_cart = true
+    @cart_data = Carts::CartService.call(@cart)
   end
 
-  # GET /carts/new
-  def new
-    @cart = Cart.new
-  end
+  def add
+    @product = Product.find_by(id: params[:id])
+    @quantity = params[:quantity].to_i
 
-  # GET /carts/1/edit
-  def edit
-  end
-
-  # POST /carts or /carts.json
-  def create
-    @cart = Cart.new(cart_params)
-
-    respond_to do |format|
-      if @cart.save
-        format.html { redirect_to cart_url(@cart), notice: "Cart was successfully created." }
-        format.json { render :show, status: :created, location: @cart }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @cart.errors, status: :unprocessable_entity }
-      end
+    if @quantity <= 0
+      @cart.orderables.where(quantity: 0).destroy_all
+    else
+      Carts::CartService.call(@cart, @product, @quantity)
     end
+
+    redirect_to cart_path
   end
 
-  # PATCH/PUT /carts/1 or /carts/1.json
-  def update
-    respond_to do |format|
-      if @cart.update(cart_params)
-        format.html { redirect_to cart_url(@cart), notice: "Cart was successfully updated." }
-        format.json { render :show, status: :ok, location: @cart }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @cart.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
-  # DELETE /carts/1 or /carts/1.json
-  def destroy
-    @cart.destroy
 
-    respond_to do |format|
-      format.html { redirect_to carts_url, notice: "Cart was successfully destroyed." }
-      format.json { head :no_content }
+  def remove
+    @orderable = @cart.orderables.find_by(id: params[:id])
+    if @orderable
+      @orderable.destroy
     end
+    redirect_to cart_path
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_cart
-      @cart = Cart.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def cart_params
-      params.fetch(:cart, {})
-    end
+  def set_cart
+    @cart = Cart.find_or_create_by(user_id: current_user.id)
+  end
+
+  def set_orderable
+    @orderable = @cart.orderables.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to cart_path, alert: "Orderable not found"
+  end
+
 end

@@ -1,10 +1,10 @@
-<%= form_with(model: review) do |form| %>
-  <% if review.errors.any? %>
+<%= form_with model:[@product, @review] do |form| %>
+  <% if @review.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
 
       <ul>
-        <% review.errors.each do |error| %>
+        <% @review.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -12,6 +12,24 @@
   <% end %>
 
   <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :rating, style: "display: block" %>
+    <%= form.select :rating, options_for_select([1, 2, 3, 4, 5]) %>
+  </div>
+
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
+
+<p>
+  <%= @review.body %>
+  <%= @review.rating %>
+<p>
+
+  <%= link_to "Edit this review", edit_product_review_path(@product, @review) %>

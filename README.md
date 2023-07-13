@@ -28,34 +28,20 @@ git clone https://github.com/Oles102/Online-Marketplace.git
 ```
 cd My_project
 ```
-3. Add the required gems to your Gemfile:
-```
-```ruby
-gem "pg"
-gem "redis"
-gem "sassc-rails"
-gem "factory_bot_rails"
-gem "letter_opener"
-gem "devise"
-gem "image_processing"
-gem "rolify"
-gem "pundit"
-gem "sidekiq"
-```
-4.Install the gems:
+3.Install the gems:
 ```
 bundle install
 ```
-5.Set up the database:
+4.Set up the database:
 ```
 rails db:create
 rails db:migrate
 ```
-6.Start the development server:
+5.Start the development server:
 ```
 rails s
 ```
-7.Open the application in your browser at http://localhost:3000.
+6.Open the application in your browser at http://localhost:3000.
 
 # Contributing
 

@@ -474,3 +474,12 @@
 2023-07-25 00:23:10.646 MSK [2245] LOG:  invalid record length at 0/25CE868: wanted 24, got 0
 2023-07-25 00:23:10.646 MSK [2245] LOG:  redo done at 0/25CE830 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
 2023-07-25 00:23:10.667 MSK [2244] LOG:  database system is ready to accept connections
+2023-07-25 16:05:59.000 MSK [16430] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-25 16:05:59.000 MSK [16430] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-25 16:05:59.005 MSK [16430] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-25 16:05:59.015 MSK [16431] LOG:  database system was interrupted; last known up at 2023-07-25 00:23:10 MSK
+2023-07-25 16:05:59.306 MSK [16431] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-25 16:05:59.309 MSK [16431] LOG:  redo starts at 0/25CE8E0
+2023-07-25 16:05:59.309 MSK [16431] LOG:  invalid record length at 0/25CE918: wanted 24, got 0
+2023-07-25 16:05:59.309 MSK [16431] LOG:  redo done at 0/25CE8E0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-25 16:05:59.329 MSK [16430] LOG:  database system is ready to accept connections

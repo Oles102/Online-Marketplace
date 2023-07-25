@@ -79,7 +79,7 @@ group :test do
 end
 
   gem 'bootstrap'
-  gem 'bootstrap-sass'
+  
 
   gem 'faker'
   gem 'curb'

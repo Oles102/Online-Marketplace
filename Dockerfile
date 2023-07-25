@@ -23,4 +23,4 @@ RUN chmod +x /app/bin/*
 # Открываем порт 3000 для приложения Rails
 EXPOSE 3000
 
-CMD bundle exec rails db:create && bundle exec rails db:migrate && ./bin/rails server -b 0.0.0.0
+CMD bundle exec rails db:create && bundle exec rails db:seed  && bundle exec rails db:migrate && ./bin/rails server -b 0.0.0.0

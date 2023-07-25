@@ -28,9 +28,15 @@ services:
     command: "postgres -c 'max_connections=500'"
     
   redis:
-    image: "redis:7.0.11"
+    container_name: redis
+    hostname: redis
+    image: redis:7.0.11
+    command: >
+      --include /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
     ports:
-      - "6379"
+      - "6379:6379"
 
 volumes:
   postgres_data:

@@ -2,7 +2,7 @@ class LocalesController < ApplicationController
   before_action :authenticate_user!
 
   def change_locale
-    current_user.update(locale: change_locale_permitted_params[:locale])
+    current_user.update(change_locale_permitted_params)
 
     render json: :ok
   end

@@ -9,6 +9,3 @@
 # Category.create(name: "Dog")
 # AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
-Role.create(name: "admin")
-Role.create(name: "user")
-Role.create(name: "seller")

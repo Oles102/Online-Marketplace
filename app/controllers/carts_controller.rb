@@ -5,7 +5,6 @@ class CartsController < ApplicationController
 
   def show
     @render_cart = true
-    @cart_data = Carts::CartService.call(@cart)
   end
 
   def add
@@ -15,32 +14,26 @@ class CartsController < ApplicationController
     if @quantity <= 0
       @cart.orderables.where(quantity: 0).destroy_all
     else
-      Carts::CartService.call(@cart, @product, @quantity)
+      Carts::AddToCartService.call(@cart, @product, @quantity)
     end
 
     redirect_to cart_path
   end
 
-
-
   def remove
-    @orderable = @cart.orderables.find_by(id: params[:id])
-    if @orderable
-      @orderable.destroy
-    end
+    Carts::RemoveCartService.call(@orderable)
     redirect_to cart_path
   end
 
   private
 
   def set_cart
-    @cart = Cart.find_or_create_by(user_id: current_user.id)
+    @cart = current_user.cart || current_user.create_cart
   end
 
   def set_orderable
-    @orderable = @cart.orderables.find(params[:id])
-  rescue ActiveRecord::RecordNotFound
-    redirect_to cart_path, alert: "Orderable not found"
+    @orderable = @cart.orderables.find_by(id: params[:id])
+    redirect_to cart_path, alert: "Orderable not found" unless @orderable
   end
 
 end

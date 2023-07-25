@@ -1,29 +1,52 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- */
+@import 'custom_styles.css';
+/* Стилизация общего контейнера для навигационного меню */
+.nav-menu {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Стилизация ссылок в навигационном меню */
+.nav-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  background-color: #ddd;
+}
+
+/* Стилизация аватара пользователя */
+.nav-menu .user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Дополнительные стили для активной ссылки, например, текущей страницы */
+.nav-menu .active {
+  background-color: #007bff;
+  color: #fff;
+}
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px; }
+
+div.field,
+div.actions {
+  margin-bottom: 10px; }
 
 footer {
-    position: relative;
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
+  height: 100px;
+  margin: 50px;
 }
-
-.product-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5em;
-}
+form textarea {
+  width: calc(10% - 18px);
+  border: 1px solid #7aaad2;
+  border-radius: 9px;
+  font-size: 0.95em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 7px 3px 5px; }

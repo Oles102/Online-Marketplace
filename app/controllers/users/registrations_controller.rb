@@ -1,17 +1,16 @@
 module Users
   class RegistrationsController < Devise::RegistrationsController
-    before_action :configure_sign_up_params, if: :devise_controller?
+    before_action :configure_sign_up_params, only: [:create]
 
     def create
       super do |user|
         if user.persisted?
           Users::Confirmation::SendMailWorker.perform_async(user.id)
-          # role_name = params[:user][:role] || Role::USER
-          # role = Role.find_by(name: role_name)
-          # user.add_role(role) if role
+          user.add_role(params[:role]) if params[:role].present?
         end
       end
     end
+
 
     protected
 

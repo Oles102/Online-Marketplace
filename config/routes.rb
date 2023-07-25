@@ -7,23 +7,21 @@ Rails.application.routes.draw do
 
   resources :products do
     resources :reviews, only: [:create]
+    get 'search', on: :collection
   end
 
-  # resource :cart, only: [:show] do
-  #   post :add, on: :collection
-  #   post :remove, on: :collection
-  # end
+
   resource :cart, only: [:show] do
     post '/add', to: 'carts#add', as: 'add_to_cart'
     delete '/remove/:id', to: 'carts#remove', as: 'remove_from_cart'
   end
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
   root "products#index"
 
   patch 'change_locale' => 'locales#change_locale'
+
+
 
   mount Sidekiq::Web => '/sidekiq'
 end

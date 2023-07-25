@@ -2,9 +2,13 @@ require 'rails_helper'
 
 RSpec.describe CartsController, type: :controller do
   describe 'GET #show' do
+    let(:user) { create(:user) }
+
+    before { sign_in user }
+
     it 'renders the show template' do
       get :show
-      expect(response).to redirect_to(new_user_session_path)
+      expect(response).to render_template(:show)
     end
 
     it 'sets @render_cart to true' do
@@ -21,10 +25,13 @@ RSpec.describe CartsController, type: :controller do
 
     context 'when quantity is greater than 0' do
       it 'creates a new orderable and redirects to cart_path' do
-        post :add, params: { id: product.id, quantity: 2 }
+        expect {
+          post :add, params: { id: product.id, quantity: 2 }
+        }.to change(Orderable, :count).by(1)
+
         expect(response).to redirect_to(cart_path)
-        expect(Orderable.count).to eq(1)
       end
+
     end
 
     context 'when quantity is 0' do
@@ -55,12 +62,9 @@ RSpec.describe CartsController, type: :controller do
     it 'destroys the orderable and redirects to cart_path' do
       expect {
         delete :remove, params: { id: orderable.id }
-      }.to change { Orderable.count }.by(-1)
+      }.to change(Orderable, :count ).by(-1)
 
       expect(response).to redirect_to(cart_path)
     end
   end
-
-
-
 end

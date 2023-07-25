@@ -4,11 +4,15 @@
       <strong>Name:</strong>
       <%= product.name %>
     </p>
+    <p>
+      <strong>Category:</strong>
+      <%=product.category.name %>
+    </p>
      <p>
        <strong>Price: </strong>
        <%= number_to_currency(product.price, unit: "", separator: ".", delimiter: "", format: "%n %u") %> $
      </p>
-     <p>
+      <p class="lead my-3">
        <strong>Description: </strong>
        <%= product.description %>
      </p>

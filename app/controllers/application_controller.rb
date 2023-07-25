@@ -3,40 +3,32 @@ class ApplicationController < ActionController::Base
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
-  before_action :set_render_cart
-  before_action :initialize_cart
   before_action :set_locale
-
-  def set_render_cart
-    @render_cart = true
-  end
-
-  def initialize_cart
-    @cart ||= Cart.find_or_create_by(user: current_user)
-
-    if @cart.nil?
-      @cart = Cart.create
-      session[:cart_id] = @cart.id
-    else
-      session[:cart_id] = @cart.id
-    end
-  end
+  before_action :initialize_cart
 
 
   private
+  def initialize_cart
+    @cart = Cart.find_or_create_by(user: current_user)
+    session[:cart_id] = @cart.id if @cart.present? && session[:cart_id].nil?
+  end
 
   def user_not_authorized
-    flash[:alert] = "Only sellers are authorized to perform this action."
-    redirect_to products_path
+    if user_signed_in?
+      flash[:alert] = "Only sellers are authorized to perform this action."
+      redirect_to products_path
+    else
+      flash[:alert] = "Please sign up or log in to perform this action."
+      redirect_to new_user_registration_path
+    end
   end
 
   def set_locale
-     if user_signed_in?
-       I18n.locale = current_user.locale
-     else
-       I18n.locale = I18n.default_locale
-     end
-     Rails.logger.info("CURRENT LOCALE #{I18n.locale}")
-
+    I18n.locale = if user_signed_in?
+                    current_user.locale
+                  else
+                    I18n.default_locale
+                  end
+    Rails.logger.info("CURRENT LOCALE #{I18n.locale}")
   end
 end

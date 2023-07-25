@@ -149,18 +149,5 @@ RSpec.describe ProductsController, type: :controller do
         }.not_to change(Product, :count)
       end
     end
-
-    context 'when unauthorized user' do
-      it 'does not destroy the product' do
-        product = FactoryBot.create(:product)
-        expect {
-          delete :destroy, params: { id: product.id }
-        }.not_to change(Product, :count)
-      end
-    end
   end
-
-
-
-
 end

@@ -1,0 +1,12 @@
+<h1>Search Results</h1>
+
+<div id="products">
+  <ul>
+    <% @products.each do |product| %>
+      <li>
+        <%= render product %>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to 'Back to Products', products_path %>
+</div>

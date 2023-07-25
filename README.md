@@ -43,6 +43,10 @@ rails s
 ```
 6.Open the application in your browser at http://localhost:3000.
 
+7.Docker
+```
+docker pull tazdevil102/myshop
+```
 # Contributing
 
 ## We welcome contributions from the community! If you would like to contribute to the Shelter project, please follow these steps:
@@ -69,4 +73,4 @@ Please feel free to modify the content according to your project and requirement
 
 
 
-todo docker 
+ 

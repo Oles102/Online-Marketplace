@@ -44,6 +44,7 @@ rails s
 6.Open the application in your browser at http://localhost:3000.
 
 7.Docker
+[Docker project](https://hub.docker.com/r/tazdevil102/myshop)
 ```
 docker pull tazdevil102/myshop
 ```

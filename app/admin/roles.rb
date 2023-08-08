@@ -5,7 +5,7 @@ ActiveAdmin.register Role do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :name, :resource_type, :resource_id
+  permit_params :name, :resource_type, :resource_id
   #
   # or
   #

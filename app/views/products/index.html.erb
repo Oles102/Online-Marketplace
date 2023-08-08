@@ -1,5 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
+<%= render 'search_form' %>
+<thead>
+  <tr>
+    <th><%= sort_link(@q, :name, 'Name', default_order: :desc) %></th>
+    <th><%= sort_link(@q, :price, 'Price', default_order: :desc) %></th>
+    <th><%= sort_link(@q, :rating, 'Rating', default_order: :desc) %></th>
+  </tr>
+</thead>
+
 <h1>
   <%= I18n.t(:products) %>
 </h1>
@@ -21,6 +30,7 @@
           </div>
 
           <p>Rating: <%= product.reviews.average(:rating) %></p>
+
 
 
             <% if product.user == current_user %>

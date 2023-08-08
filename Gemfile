@@ -1,9 +1,4 @@
 source "https://rubygems.org"
-
-def git_source(i)
-  # code here
-end
-
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.0"
@@ -83,11 +78,14 @@ group :test do
   gem 'rails-controller-testing'
 end
 
+  gem 'bootstrap'
+  
 
   gem 'faker'
   gem 'curb'
   gem 'devise'
   gem 'activeadmin'
+  gem 'ransack'
   gem 'image_processing'
   gem 'activestorage-validator'
   gem 'rolify'

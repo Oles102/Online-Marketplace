@@ -9,8 +9,11 @@ class Product < ApplicationRecord
   validates :name, presence: true, length: { minimum: 5 }
   validates :price, presence: true, numericality: { greater_than_or_equal_to: 0.01 }
   validates :description, presence: true, length: { maximum: 255 }
-  validates :category_id, presence: true
+  validates :category, presence: true
   validates :user, presence: true
-  validates :images, presence: true, allow_blank: true, blob: { content_type: ['image/png', 'image/jpg', 'image/jpeg'], size_range: 1..(5.megabytes) }
+  validates :images, blob: { content_type: ['image/png', 'image/jpg', 'image/jpeg'], size_range: 1..(5.megabytes) }
 
+  def self.ransackable_attributes(_auth_object = nil)
+    %w[category_id description name price user_id]
+  end
 end

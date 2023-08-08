@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Shop 'Shelter'</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Shop 'Shelter'</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-  <body>
-      <div>
-      <hr>
-      <p class="notice" style="background-color: green;"><%= notice %></p>
-      <p class="alert" style="background-color: red;"><%= alert %></p>
-       <% if user_signed_in? %>
-        <br>
-        <%= link_to "Products", products_path %>
-          <br>
-        <%= link_to "My Cart", cart_path %>
-          <br>
-        <%= link_to current_user.email, edit_user_registration_path %>
-        <br>
-        <% if current_user.avatar.attached? %>
-          <%= image_tag(current_user.avatar.variant(resize_and_pad: [100, 100, gravity: 'north', background: '#000'])) %>
-        <% end %>
-        <%= link_to "Log out", destroy_user_session_path, data: { 'turbo-method': :delete } %>
-        <% else %>
-          <%= button_to "Log in", new_user_session_path %>
-        <% end %>
-        <hr>
-      </div>
+<body>
+<div class="nav-menu">
+  <hr>
+  <p class="notice" style="background-color: green;"><%= notice %></p>
+  <p class="alert" style="background-color: red;"><%= alert %></p>
+  <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+  <% if user_signed_in? %>
+    <br>
+    <%= link_to "Products", products_path %>
+    <br>
+    <%= link_to "My Cart", cart_path %>
+    <br>
+    <%= link_to current_user.email, edit_user_registration_path %>
+    <br>
+    <% if current_user.avatar.attached? %>
+      <%= image_tag(current_user.avatar.variant(resize_and_pad: [100, 100, gravity: 'north', background: '#000'])) %>
+    <% end %>
+    <%= link_to "Log out", destroy_user_session_path, data: { 'turbo-method': :delete } %>
+  <% else %>
+    <%= button_to "Log in", new_user_session_path %>
+  <% end %>
+  </nav>
+  <hr>
+</div>
 
-      <% if notice.present? %>
-        <p class="notice"><%= notice %></p>
-      <% end %>
-      <% if alert.present? %>
-        <p class="alert"><%= alert %></p>
-      <% end %>
+<% if notice.present? %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+<% if alert.present? %>
+  <p class="alert"><%= alert %></p>
+<% end %>
 
-      <%= render partial: "carts/cart" if @render_cart%>
+<%= render partial: "carts/cart" if @render_cart%>
 
-  <%= yield %>
+<%= yield %>
 
 
-  <footer>
-    <% if user_signed_in? %>
+<footer>
+  <% if user_signed_in? %>
     <%= I18n.t('locale.change') %>
     <% User::LANGUAGE_LOCALE.each do |locale| %>
       <% next if locale == I18n.locale.to_s %>
 
       <%= button_to locale, change_locale_path, params: {locale: locale }, method: :patch %>
-      <% end %>
     <% end %>
-  </footer>
-  </body>
+  <% end %>
+</footer>
+</body>
 </html>

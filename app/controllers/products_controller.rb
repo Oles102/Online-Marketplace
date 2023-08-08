@@ -4,12 +4,12 @@ class ProductsController < ApplicationController
 
   # GET /products or /products.json
     def index
-     @products = Product.all
+      @q, @products = Products::SearchFilters.call(params)
     end
 
   # GET /products/1 or /products/1.json
   def show
-    @reviews = @product.reviews.order(created_at: :desc)
+    @reviews = @product.reviews.includes(:user).order created_at: :desc
     @review = Review.new
   end
 
@@ -51,13 +51,10 @@ class ProductsController < ApplicationController
   # DELETE /products/1 or /products/1.json
     def destroy
       authorize @product
-
-      @product = Product.find(params[:id])
       @product.destroy
 
       redirect_to products_path
     end
-
 
   private
     # Use callbacks to share common setup or constraints between actions.

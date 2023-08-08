@@ -279,3 +279,207 @@
 2023-07-03 13:30:45.415 MSK [1307] LOG:  invalid record length at 0/1D11D80: wanted 24, got 0
 2023-07-03 13:30:45.415 MSK [1307] LOG:  redo done at 0/1D11D48 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
 2023-07-03 13:30:45.442 MSK [1306] LOG:  database system is ready to accept connections
+2023-07-04 15:43:32.413 MSK [1480] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-04 15:43:32.413 MSK [1480] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-04 15:43:32.419 MSK [1480] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-04 15:43:32.428 MSK [1481] LOG:  database system was interrupted; last known up at 2023-07-03 20:05:55 MSK
+2023-07-04 15:43:32.728 MSK [1481] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-04 15:43:32.732 MSK [1481] LOG:  redo starts at 0/210ADD0
+2023-07-04 15:43:32.732 MSK [1481] LOG:  invalid record length at 0/210AEB8: wanted 24, got 0
+2023-07-04 15:43:32.732 MSK [1481] LOG:  redo done at 0/210AE80 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-04 15:43:32.754 MSK [1480] LOG:  database system is ready to accept connections
+2023-07-04 19:04:25.236 MSK [22993] FATAL:  database "alex" does not exist
+2023-07-04 19:04:45.293 MSK [22998] FATAL:  lock file "postmaster.pid" already exists
+2023-07-04 19:04:45.293 MSK [22998] HINT:  Is another postmaster (PID 1480) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2023-07-04 19:05:04.770 MSK [23049] FATAL:  lock file "postmaster.pid" already exists
+2023-07-04 19:05:04.770 MSK [23049] HINT:  Is another postmaster (PID 1480) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2023-07-04 19:05:27.058 MSK [23201] FATAL:  lock file "postmaster.pid" already exists
+2023-07-04 19:05:27.058 MSK [23201] HINT:  Is another postmaster (PID 1480) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2023-07-04 19:06:03.443 MSK [23499] FATAL:  lock file "postmaster.pid" already exists
+2023-07-04 19:06:03.443 MSK [23499] HINT:  Is another postmaster (PID 1480) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2023-07-10 15:41:25.914 MSK [712] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-10 15:41:25.915 MSK [712] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-10 15:41:25.920 MSK [712] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-10 15:41:25.929 MSK [713] LOG:  database system was interrupted; last known up at 2023-07-04 20:13:36 MSK
+2023-07-10 15:41:26.214 MSK [713] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-10 15:41:26.218 MSK [713] LOG:  redo starts at 0/21304B0
+2023-07-10 15:41:26.218 MSK [713] LOG:  invalid record length at 0/2130598: wanted 24, got 0
+2023-07-10 15:41:26.218 MSK [713] LOG:  redo done at 0/2130560 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-10 15:41:26.248 MSK [712] LOG:  database system is ready to accept connections
+2023-07-11 13:34:52.111 MSK [155] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-11 13:34:52.112 MSK [155] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-11 13:34:52.117 MSK [155] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-11 13:34:52.127 MSK [156] LOG:  database system was interrupted; last known up at 2023-07-10 18:06:30 MSK
+2023-07-11 13:34:52.417 MSK [156] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-11 13:34:52.421 MSK [156] LOG:  redo starts at 0/2148F18
+2023-07-11 13:34:52.421 MSK [156] LOG:  invalid record length at 0/2149000: wanted 24, got 0
+2023-07-11 13:34:52.421 MSK [156] LOG:  redo done at 0/2148FC8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-11 13:34:52.442 MSK [155] LOG:  database system is ready to accept connections
+2023-07-11 20:57:56.787 MSK [631] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-11 20:57:56.788 MSK [631] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-11 20:57:56.793 MSK [631] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-11 20:57:56.801 MSK [632] LOG:  database system was interrupted; last known up at 2023-07-11 14:04:56 MSK
+2023-07-11 20:57:57.074 MSK [632] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-11 20:57:57.078 MSK [632] LOG:  redo starts at 0/2162D80
+2023-07-11 20:57:57.078 MSK [632] LOG:  invalid record length at 0/2162E68: wanted 24, got 0
+2023-07-11 20:57:57.078 MSK [632] LOG:  redo done at 0/2162E30 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-11 20:57:57.100 MSK [631] LOG:  database system is ready to accept connections
+2023-07-11 22:33:11.150 MSK [2282] ERROR:  update or delete on table "users" violates foreign key constraint "fk_rails_74a66bd6c5" on table "reviews"
+2023-07-11 22:33:11.150 MSK [2282] DETAIL:  Key (id)=(20) is still referenced from table "reviews".
+2023-07-11 22:33:11.150 MSK [2282] STATEMENT:  DELETE FROM "users" WHERE "users"."id" = $1
+2023-07-12 19:53:11.379 MSK [360] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-12 19:53:11.380 MSK [360] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-12 19:53:11.385 MSK [360] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-12 19:53:11.392 MSK [361] LOG:  database system was interrupted; last known up at 2023-07-11 23:42:59 MSK
+2023-07-12 19:53:11.685 MSK [361] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-12 19:53:11.689 MSK [361] LOG:  redo starts at 0/2173910
+2023-07-12 19:53:11.689 MSK [361] LOG:  invalid record length at 0/21739F8: wanted 24, got 0
+2023-07-12 19:53:11.689 MSK [361] LOG:  redo done at 0/21739C0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-12 19:53:11.712 MSK [360] LOG:  database system is ready to accept connections
+2023-07-13 15:20:32.447 MSK [155] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-13 15:20:32.448 MSK [155] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-13 15:20:32.453 MSK [155] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-13 15:20:32.462 MSK [156] LOG:  database system was interrupted; last known up at 2023-07-12 21:28:11 MSK
+2023-07-13 15:20:32.739 MSK [156] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-13 15:20:32.743 MSK [156] LOG:  redo starts at 0/2186DE0
+2023-07-13 15:20:32.743 MSK [156] LOG:  invalid record length at 0/2186EC8: wanted 24, got 0
+2023-07-13 15:20:32.743 MSK [156] LOG:  redo done at 0/2186E90 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-13 15:20:32.764 MSK [155] LOG:  database system is ready to accept connections
+2023-07-14 19:55:36.566 MSK [714] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-14 19:55:36.567 MSK [714] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-14 19:55:36.572 MSK [714] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-14 19:55:36.580 MSK [715] LOG:  database system was interrupted; last known up at 2023-07-13 15:20:32 MSK
+2023-07-14 19:55:36.853 MSK [715] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-14 19:55:36.856 MSK [715] LOG:  redo starts at 0/2186F40
+2023-07-14 19:55:36.856 MSK [715] LOG:  invalid record length at 0/2186F78: wanted 24, got 0
+2023-07-14 19:55:36.856 MSK [715] LOG:  redo done at 0/2186F40 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-14 19:55:36.877 MSK [714] LOG:  database system is ready to accept connections
+2023-07-17 16:34:21.547 MSK [995] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-17 16:34:21.548 MSK [995] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-17 16:34:21.554 MSK [995] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-17 16:34:21.565 MSK [996] LOG:  database system was interrupted; last known up at 2023-07-14 19:55:36 MSK
+2023-07-17 16:34:21.900 MSK [996] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-17 16:34:21.904 MSK [996] LOG:  redo starts at 0/2186FF0
+2023-07-17 16:34:21.904 MSK [996] LOG:  invalid record length at 0/2187028: wanted 24, got 0
+2023-07-17 16:34:21.904 MSK [996] LOG:  redo done at 0/2186FF0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-17 16:34:21.928 MSK [995] LOG:  database system is ready to accept connections
+2023-07-19 16:54:47.205 MSK [385] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-19 16:54:47.207 MSK [385] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-19 16:54:47.212 MSK [385] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-19 16:54:47.221 MSK [386] LOG:  database system was interrupted; last known up at 2023-07-18 00:54:32 MSK
+2023-07-19 16:54:47.499 MSK [386] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-19 16:54:47.503 MSK [386] LOG:  redo starts at 0/21A1928
+2023-07-19 16:54:47.503 MSK [386] LOG:  invalid record length at 0/21A1A10: wanted 24, got 0
+2023-07-19 16:54:47.503 MSK [386] LOG:  redo done at 0/21A19D8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-19 16:54:47.532 MSK [385] LOG:  database system is ready to accept connections
+2023-07-19 21:52:41.754 MSK [340] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-19 21:52:41.755 MSK [340] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-19 21:52:41.759 MSK [340] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-19 21:52:41.770 MSK [341] LOG:  database system was interrupted; last known up at 2023-07-19 21:39:51 MSK
+2023-07-19 21:52:42.085 MSK [341] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-19 21:52:42.089 MSK [341] LOG:  redo starts at 0/21ADCD0
+2023-07-19 21:52:42.089 MSK [341] LOG:  invalid record length at 0/21ADDB8: wanted 24, got 0
+2023-07-19 21:52:42.089 MSK [341] LOG:  redo done at 0/21ADD80 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-19 21:52:42.112 MSK [340] LOG:  database system is ready to accept connections
+2023-07-20 00:40:15.349 MSK [6018] FATAL:  lock file "postmaster.pid" already exists
+2023-07-20 00:40:15.349 MSK [6018] HINT:  Is another postmaster (PID 340) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2023-07-20 00:41:50.624 MSK [6022] FATAL:  database "alex" does not exist
+2023-07-20 14:06:42.080 MSK [579] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-20 14:06:42.080 MSK [579] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-20 14:06:42.085 MSK [579] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-20 14:06:42.094 MSK [580] LOG:  database system was interrupted; last known up at 2023-07-19 21:52:42 MSK
+2023-07-20 14:06:42.370 MSK [580] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-20 14:06:42.373 MSK [580] LOG:  redo starts at 0/21ADE30
+2023-07-20 14:06:42.373 MSK [580] LOG:  invalid record length at 0/21ADE68: wanted 24, got 0
+2023-07-20 14:06:42.373 MSK [580] LOG:  redo done at 0/21ADE30 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-20 14:06:42.394 MSK [579] LOG:  database system is ready to accept connections
+2023-07-20 16:56:20.615 MSK [3272] ERROR:  operator does not exist: numeric ~~* numeric at character 247
+2023-07-20 16:56:20.615 MSK [3272] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 16:56:20.615 MSK [3272] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%5%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%5%') OR "categories"."name" ILIKE '%5%')
+2023-07-20 16:58:16.517 MSK [3272] ERROR:  operator does not exist: numeric ~~* numeric at character 247
+2023-07-20 16:58:16.517 MSK [3272] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 16:58:16.517 MSK [3272] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%5%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%5%') OR "categories"."name" ILIKE '%5%')
+2023-07-20 17:01:44.524 MSK [3399] ERROR:  operator does not exist: numeric ~~* numeric at character 247
+2023-07-20 17:01:44.524 MSK [3399] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 17:01:44.524 MSK [3399] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%5%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%5%') OR "categories"."name" ILIKE '%5%')
+2023-07-20 17:09:46.696 MSK [3465] ERROR:  operator does not exist: numeric ~~* numeric at character 249
+2023-07-20 17:09:46.696 MSK [3465] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 17:09:46.696 MSK [3465] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE (((("products"."name" ILIKE '%ап%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%ап%') OR "categories"."name" ILIKE '%ап%') AND "products"."price" ILIKE 0.0)
+2023-07-20 17:11:03.417 MSK [3465] ERROR:  operator does not exist: numeric ~~* numeric at character 247
+2023-07-20 17:11:03.417 MSK [3465] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 17:11:03.417 MSK [3465] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%с%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%с%') OR "categories"."name" ILIKE '%с%')
+2023-07-20 17:36:33.531 MSK [3738] ERROR:  operator does not exist: numeric ~~* numeric at character 252
+2023-07-20 17:36:33.531 MSK [3738] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 17:36:33.531 MSK [3738] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%collar%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%collar%') OR "categories"."name" ILIKE '%collar%')
+2023-07-20 18:07:12.989 MSK [4015] ERROR:  operator does not exist: numeric ~~* numeric at character 247
+2023-07-20 18:07:12.989 MSK [4015] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 18:07:12.989 MSK [4015] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%5%' OR "products"."price" ILIKE 0.0) OR "users"."email" ILIKE '%5%') OR "categories"."name" ILIKE '%5%')
+2023-07-20 20:29:59.405 MSK [5878] ERROR:  operator does not exist: bigint ~~* unknown at character 153
+2023-07-20 20:29:59.405 MSK [5878] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 20:29:59.405 MSK [5878] STATEMENT:  SELECT DISTINCT "products".* FROM "products" WHERE (("products"."name" ILIKE '%c%' OR "products"."description" ILIKE '%c%') OR "products"."category_id" ILIKE NULL)
+2023-07-20 20:31:22.379 MSK [5878] ERROR:  operator does not exist: bigint ~~* unknown at character 163
+2023-07-20 20:31:22.379 MSK [5878] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 20:31:22.379 MSK [5878] STATEMENT:  SELECT DISTINCT "products".* FROM "products" WHERE (("products"."name" ILIKE '%collar%' OR "products"."description" ILIKE '%collar%') OR "products"."category_id" ILIKE NULL)
+2023-07-20 20:32:06.937 MSK [5878] ERROR:  operator does not exist: bigint ~~* unknown at character 163
+2023-07-20 20:32:06.937 MSK [5878] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 20:32:06.937 MSK [5878] STATEMENT:  SELECT DISTINCT "products".* FROM "products" WHERE (("products"."name" ILIKE '%collar%' OR "products"."description" ILIKE '%collar%') OR "products"."category_id" ILIKE NULL)
+2023-07-20 20:38:01.145 MSK [7067] ERROR:  operator does not exist: numeric ~~* numeric at character 261
+2023-07-20 20:38:01.145 MSK [7067] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 20:38:01.145 MSK [7067] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%c%' OR "products"."description" ILIKE '%c%') OR "categories"."name" ILIKE '%c%') OR "products"."price" ILIKE 0.0)
+2023-07-20 20:40:12.663 MSK [7067] ERROR:  operator does not exist: numeric ~~* numeric at character 261
+2023-07-20 20:40:12.663 MSK [7067] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-20 20:40:12.663 MSK [7067] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE ((("products"."name" ILIKE '%5%' OR "products"."description" ILIKE '%5%') OR "categories"."name" ILIKE '%5%') OR "products"."price" ILIKE 0.0)
+2023-07-21 21:29:18.801 MSK [590] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-21 21:29:18.801 MSK [590] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-21 21:29:18.806 MSK [590] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-21 21:29:18.816 MSK [591] LOG:  database system was interrupted; last known up at 2023-07-20 19:11:48 MSK
+2023-07-21 21:29:19.090 MSK [591] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-21 21:29:19.094 MSK [591] LOG:  redo starts at 0/21D2298
+2023-07-21 21:29:19.094 MSK [591] LOG:  invalid record length at 0/21D2380: wanted 24, got 0
+2023-07-21 21:29:19.094 MSK [591] LOG:  redo done at 0/21D2348 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-21 21:29:19.115 MSK [590] LOG:  database system is ready to accept connections
+2023-07-21 23:01:59.910 MSK [2790] ERROR:  operator does not exist: numeric ~~* numeric at character 357
+2023-07-21 23:01:59.910 MSK [2790] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-21 23:01:59.910 MSK [2790] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE (((("products"."name" ILIKE '%5%' OR "users"."email" ILIKE '%5%') OR "products"."description" ILIKE '%5%') OR "categories"."name" ILIKE '%5%') OR "products"."price" ILIKE 0.0)
+2023-07-22 14:02:44.560 MSK [680] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-22 14:02:44.561 MSK [680] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-22 14:02:44.565 MSK [680] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-22 14:02:44.574 MSK [681] LOG:  database system was interrupted; last known up at 2023-07-21 23:09:21 MSK
+2023-07-22 14:02:44.868 MSK [681] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-22 14:02:44.871 MSK [681] LOG:  redo starts at 0/21D99D0
+2023-07-22 14:02:44.871 MSK [681] LOG:  invalid record length at 0/21D9AB8: wanted 24, got 0
+2023-07-22 14:02:44.871 MSK [681] LOG:  redo done at 0/21D9A80 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-22 14:02:44.892 MSK [680] LOG:  database system is ready to accept connections
+2023-07-22 15:45:46.190 MSK [3400] ERROR:  operator does not exist: numeric ~~* numeric at character 369
+2023-07-22 15:45:46.190 MSK [3400] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-22 15:45:46.190 MSK [3400] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE (((("products"."name" ILIKE '%cola%' OR "users"."email" ILIKE '%cola%') OR "products"."description" ILIKE '%cola%') OR "categories"."name" ILIKE '%cola%') OR "products"."price" ILIKE 0.0)
+2023-07-23 15:04:02.886 MSK [762] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-23 15:04:02.887 MSK [762] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-23 15:04:02.892 MSK [762] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-23 15:04:02.903 MSK [763] LOG:  database system was interrupted; last known up at 2023-07-22 22:27:59 MSK
+2023-07-23 15:04:03.185 MSK [763] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-23 15:04:03.189 MSK [763] LOG:  redo starts at 0/23E17B8
+2023-07-23 15:04:03.189 MSK [763] LOG:  invalid record length at 0/23E18A0: wanted 24, got 0
+2023-07-23 15:04:03.189 MSK [763] LOG:  redo done at 0/23E1868 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-23 15:04:03.215 MSK [762] LOG:  database system is ready to accept connections
+2023-07-23 21:59:39.699 MSK [6879] ERROR:  operator does not exist: bigint ~~* unknown at character 372
+2023-07-23 21:59:39.699 MSK [6879] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-07-23 21:59:39.699 MSK [6879] STATEMENT:  SELECT DISTINCT "products".* FROM "products" LEFT OUTER JOIN "users" ON "users"."id" = "products"."user_id" LEFT OUTER JOIN "categories" ON "categories"."id" = "products"."category_id" WHERE (((("products"."name" ILIKE '%Cat%' OR "users"."email" ILIKE '%Cat%') OR "products"."description" ILIKE '%Cat%') OR "categories"."name" ILIKE '%Cat%') AND "products"."category_id" ILIKE NULL)
+2023-07-25 00:23:10.331 MSK [2244] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-25 00:23:10.332 MSK [2244] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-25 00:23:10.337 MSK [2244] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-25 00:23:10.345 MSK [2245] LOG:  database system was interrupted; last known up at 2023-07-23 17:34:09 MSK
+2023-07-25 00:23:10.642 MSK [2245] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-25 00:23:10.646 MSK [2245] LOG:  redo starts at 0/25CE780
+2023-07-25 00:23:10.646 MSK [2245] LOG:  invalid record length at 0/25CE868: wanted 24, got 0
+2023-07-25 00:23:10.646 MSK [2245] LOG:  redo done at 0/25CE830 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-25 00:23:10.667 MSK [2244] LOG:  database system is ready to accept connections
+2023-07-25 16:05:59.000 MSK [16430] LOG:  starting PostgreSQL 14.8 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-07-25 16:05:59.000 MSK [16430] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-07-25 16:05:59.005 MSK [16430] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-07-25 16:05:59.015 MSK [16431] LOG:  database system was interrupted; last known up at 2023-07-25 00:23:10 MSK
+2023-07-25 16:05:59.306 MSK [16431] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-07-25 16:05:59.309 MSK [16431] LOG:  redo starts at 0/25CE8E0
+2023-07-25 16:05:59.309 MSK [16431] LOG:  invalid record length at 0/25CE918: wanted 24, got 0
+2023-07-25 16:05:59.309 MSK [16431] LOG:  redo done at 0/25CE8E0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-07-25 16:05:59.329 MSK [16430] LOG:  database system is ready to accept connections
